@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_PageHeader
+  File name(文件名): test1
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/5/5
+  Time(创建时间)： 20:27
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+</head>
+<body>
+
+<div id="app">
+
+    <el-page-header @back="back" content="页面1">
+    </el-page-header>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {
+            back: function ()
+            {
+                console.log("返回")
+            }
+        },
+        mounted()
+        {
+
+        }
+    })
+</script>
+</body>
+</html>
